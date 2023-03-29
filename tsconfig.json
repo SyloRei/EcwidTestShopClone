@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "baseUrl": "./",
+    "rootDir": "src",
+    "moduleResolution": "Node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": {
+      "@routes/*": ["src/routes/*"],
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@core/*": ["src/core/*"],
+      "@api/*": ["src/api/*"],
+      "@containers/*": ["src/containers/*"],
+      "@components/*": ["src/components/*"],
+      "@store/*": ["src/store/*"]
+    },
+    "types": ["vite-svg-loader", "vite/client"],
+  
+    
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "declaration.d.ts", "declaration.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

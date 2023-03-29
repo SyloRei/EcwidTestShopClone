@@ -1,0 +1,30 @@
+@import '@scss/colors';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#app {
+	font-family: 'Lato', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	background-image: $gradient;
+}
+* {
+	scrollbar-width: auto;
+}
+
+*::-webkit-scrollbar {
+	width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+	background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #1f1f1f4d;
+	border-radius: 10px;
+	border: 1px solid #e6e4e4;
+}
